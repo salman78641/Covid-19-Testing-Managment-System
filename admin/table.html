@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	 h2
+	{
+		 text-align: center;
+		background-color: skyblue;
+	}
+</style>
+</head>
+<body>
+<h2>Laboratory Testing</h2> 
+<table>
+       
+
+    <br>
+      <br>
+
+        
+
+            <tr> 
+
+                 
+               
+                <th>Test Type</th>
+                <th> First Name</th> 
+
+                <th> Midle Name</th> 
+
+                <th>Last Name</th>
+                <th>Gender</th>
+                <th>Date of Birth</th>
+                <th>Identity Card</th>
+                <th>Address 1</th>
+                <th>Address 2</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Postal Code</th>
+                <th>Phone</th>
+                <th>Extra Phone</th>
+                <th>Email</th> 
+                <th>File</th>
+                <th> Card type </th>
+                <th> Card Owner Name </th>
+                <th>Card Number</th>
+                <th>Expiration Date</th>
+                <th>Delete Data</th>
+
+            </tr> 
+         
+
+    
+            
+ <?php
+    $i=0;
+   while($rows = mysqli_fetch_array($result)) {
+    ?> 
+<tr>
+              
+                
+
+                <td><?php echo $rows['testtype'];?></td> 
+
+                <td><?php echo $rows['fname'];?></td> 
+
+                <td><?php echo $rows['mname'];?></td> 
+             
+                <td><?php echo $rows['lname'];?></td> 
+
+                <td><?php echo $rows['Gender'];?></td> 
+
+                <td><?php echo $rows['dob'];?></td> 
+
+                
+                <td><?php echo $rows['id'];?></td> 
+
+                <td><?php echo $rows['add1'];?></td> 
+
+                <td><?php echo $rows['add2'];?></td> 
+
+                <td><?php echo $rows['city'];?></td> 
+
+                <td><?php echo $rows['state'];?></td> 
+
+                <td><?php echo $rows['ZIP'];?></td> 
+
+                <td><?php echo $rows['phone'];?></td> 
+
+                <td><?php echo $rows['Exphone'];?></td> 
+
+                <td><?php echo $rows['email'];?></td> 
+  
+                <td><a href="files.php?file=<?php echo $rows['file'];?>"><?php echo $rows['file']; ?></a></td>
+
+                <td><?php echo $rows['card'];?></td> 
+
+                <td><?php echo $rows['CardOwnName'];?></td> 
+
+                <td><?php echo $rows['cardnum'];?></td> 
+
+                <td><?php echo $rows['expdate'];?></td>  
+
+                <td><a href="delete.php?email=<?php echo $rows['email']; ?>  ">Delete</a></td>
+                 
+              
+ 
+            <?php
+        }
+    $i++;
+    ?>
+
+        </table> 
+
+</table>
+
+ 
+</body>
+</html>

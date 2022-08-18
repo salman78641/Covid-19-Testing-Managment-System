@@ -1,0 +1,112 @@
+ 
+ 
+.briefcase
+{
+	
+	
+	justify-content: center;
+
+	padding: 150px 100px;
+
+        background-image: url('testcovid.jpg');
+         background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+	background-color: lightcyan;
+}
+ 
+.briefcase h1
+{
+	 text-align: center;
+		align-items: center;
+		 color: lightcoral;
+		 font-size: 34px;
+
+
+}
+.briefcase p
+{
+	 text-align: center;
+		align-items: center;
+		 color: lightsalmon;
+		 font-size: 19px;
+
+
+}
+.grands
+{
+	padding: 50px 100px;
+	background-color: ghostwhite;
+}
+.grands p
+{
+	text-align: center;
+}
+.grands h2
+{
+	text-align: center;
+}
+
+.comments
+{
+	padding: 49px 100px;
+   background-color: darkwhite;
+}
+
+.comments p
+{
+	text-align: center;
+	color: darkturquoiserk;
+
+}
+.FAQsalmans
+{
+	padding: 199px 199px;
+ 
+
+}
+.FAQsalmans p
+{
+	text-align: right;
+ 
+	font-size: 16px;
+}
+.input-field, form .button
+{
+	margin: 25px;
+	position: relative;
+	height: 50px;
+	width: 50%;
+}
+.input-field input{
+	height: 100%;
+	width: 100%;
+	border: 1px solid silver;
+	padding-left: 15px;
+	outline: none;
+	font-size: 19px;
+}
+.input-field label
+
+input:focus
+{
+	border: 3px solid #1DA1F2;
+}
+input:focus~label
+input:valid~label
+{
+	transform: translateY(-33px);
+	background: white;
+	font-size: 1;
+}
+.container
+{
+	justify-content: center;
+	align-items: center;
+		text-align: center;
+	position: relative;
+	width: 400px;
+	background: white;
+	padding: 60px 40px;
+
+}
