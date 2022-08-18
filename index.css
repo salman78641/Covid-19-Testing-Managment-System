@@ -1,0 +1,41 @@
+
+
+.input-field, form .button
+{
+	margin: 25px;
+	position: relative;
+	height: 50px;
+	width: 50%;
+}
+.input-field input{
+	height: 100%;
+	width: 100%;
+	border: 1px solid silver;
+	padding-left: 15px;
+	outline: none;
+	font-size: 19px;
+}
+.input-field label
+
+input:focus
+{
+	border: 3px solid #1DA1F2;
+}
+input:focus~label
+input:valid~label
+{
+	transform: translateY(-33px);
+	background: white;
+	font-size: 1;
+}
+.container
+{
+	justify-content: center;
+	align-items: center;
+		text-align: center;
+	position: relative;
+	width: 400px;
+	background: white;
+	padding: 60px 40px;
+
+}
